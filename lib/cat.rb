@@ -9,7 +9,7 @@ attr_accessor :mood
     @mood = mood
     if owner
     @owner = owner
-  end
+    end
   end
 
  @@all = []
