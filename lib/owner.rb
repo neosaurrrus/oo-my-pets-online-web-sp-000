@@ -39,6 +39,7 @@ class Owner
 
   def buy_cat(name)
     new_cat = Cat.new(name, self)
+    @@all < new_cat
   end
 
   def dogs
