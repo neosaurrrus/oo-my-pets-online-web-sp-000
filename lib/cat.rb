@@ -20,6 +20,9 @@ attr_accessor :mood
    @@all
  end
 
+ def owner
+   @owner
+ end
 
 
  def mood
