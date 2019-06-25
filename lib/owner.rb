@@ -57,11 +57,18 @@ class Owner
   end
 
   def feed_cats
-    puts @cats
     @cats.each do |cat|
       cat.mood = "happy"
     end
   end
 
+  def sell_pets
+    @cats.each do |cat|
+      cat.mood = "nervous"
+    end
+    @dogs.each do |dog|
+      dog.mood = "nervous"
+    end
+  end
 
 end # of owner
