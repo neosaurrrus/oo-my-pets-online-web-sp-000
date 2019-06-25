@@ -73,7 +73,7 @@ class Owner
     end
     @cats = []
     @dogs = []
-    
+
   end
 
 end # of owner
