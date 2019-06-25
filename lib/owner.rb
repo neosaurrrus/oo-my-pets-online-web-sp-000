@@ -10,6 +10,7 @@ class Owner
   def initialize(name)
     @name = name
     @@all << self
+    @all = []
     @species = "human"
 
       @cats = []
@@ -33,13 +34,14 @@ class Owner
     "I am a #{@species}."
   end
 
+
   def cats
     @cats
   end
 
   def buy_cat(name)
     new_cat = Cat.new(name, self)
-    @@all << new_cat
+    @all << new_cat
   end
 
   def dogs
