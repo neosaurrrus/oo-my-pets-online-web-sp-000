@@ -65,11 +65,12 @@ class Owner
   def sell_pets
     @cats.each do |cat|
       cat.mood = "nervous"
-      cat.owner = nil
     end
     @dogs.each do |dog|
       dog.mood = "nervous"
-      dog.owner = nil
+    end
+    @cats.each do |cat|
+      cat.owner = nil
     end
     @cats = []
     @dogs = []
