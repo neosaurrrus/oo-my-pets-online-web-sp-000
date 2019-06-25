@@ -59,9 +59,9 @@ class Owner
 
   def feed_cats
     puts @cats
-    @cats.each { |cat|
+    @cats.each do |cat|
       cat.mood = "happy"
-    }
+    end
   end
 
 
